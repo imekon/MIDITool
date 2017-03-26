@@ -148,6 +148,7 @@
         <DCCReference Include="midi.input.queue.pas"/>
         <DCCReference Include="midi.output.pas"/>
         <DCCReference Include="trace.console.pas"/>
+        <None Include="readme.md"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -174,15 +175,21 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="Win64\Release\miditool.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>miditool.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win64\Debug\miditool.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win64">
                         <RemoteName>miditool.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win64\Release\miditool.exe" Configuration="Release" Class="ProjectOutput">
+                <DeployFile LocalName="New1.md" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win64">
-                        <RemoteName>miditool.exe</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
